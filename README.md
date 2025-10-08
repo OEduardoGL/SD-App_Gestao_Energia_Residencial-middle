@@ -1,1 +1,0 @@
-# SD-App_Gestao_Energia_Residencial-Middle
