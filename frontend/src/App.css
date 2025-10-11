@@ -1,0 +1,11 @@
+/*Estilos para o elemento de classe App*/
+.App {
+    text-align: center;
+}
+
+/*Aplica estilo para todos da pagina*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

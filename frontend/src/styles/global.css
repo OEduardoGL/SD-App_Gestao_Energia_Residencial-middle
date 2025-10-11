@@ -1,0 +1,34 @@
+/* Import Google Fonts - Inter     Pode ser trocada por uma melhor*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /*fonte padrão*/
+    font-family: 'Inter', sans-serif;
+    /*cor de fundo com gradiente*/
+     background: linear-gradient(135deg, #a8e6cf 0%, #6bc7a9 100%);
+    /*body opcando a altura total da tela*/
+    min-height: 100vh;
+    colar: white;
+    margin: 0;
+}
+
+/* personalização */
+
+@layer components {
+    .btn-voltix {
+        @apply bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-lg font-semibold 
+        hover:from-green-600 hover:to-emerald-700 
+        focus:ring-2 focus:ring-green-300 focus:ring-offset-2 
+        transition-all transform hover:-translate-y-0.5;
+    }
+
+    .input-voltix {
+        @apply w-full px-4 py-3 border border-gray-300 rounded-lg 
+        focus:ring-2 focus:ring-green-500 focus:border-transparent 
+        outline-none transition-all;
+    }
+}
