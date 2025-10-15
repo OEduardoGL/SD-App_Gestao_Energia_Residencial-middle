@@ -11,7 +11,7 @@ app = FastAPI(
 )
 
 app.include_router(auth.router)
-app.include_router(health.router)
+app.include_router(health.router, tags=["health"])
 app.include_router(reports.router)
 app.include_router(consumption.router)
 app.include_router(dashboard.router)
