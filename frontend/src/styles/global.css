@@ -9,7 +9,10 @@ body {
     /*fonte padrão*/
     font-family: 'Inter', sans-serif;
     /*cor de fundo com gradiente*/
-     background: linear-gradient(135deg, #a8e6cf 0%, #6bc7a9 100%);
+    background: linear-gradient(135deg, 
+    #bbf7d0 0%, 
+    #f0fdf4 50%,
+    #fef9c3 100%);
     /*body opcando a altura total da tela*/
     min-height: 100vh;
     colar: white;
