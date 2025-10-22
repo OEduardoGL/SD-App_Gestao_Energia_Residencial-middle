@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from src.routes import auth, health, reports, consumption
+from src.routes import auth, health, reports, consumption, dashboard
 
 app = FastAPI(
     title="Middle Service - Energy Management",
@@ -14,3 +14,4 @@ app.include_router(auth.router)
 app.include_router(health.router, tags=["health"])
 app.include_router(reports.router)
 app.include_router(consumption.router)
+app.include_router(dashboard.router)
